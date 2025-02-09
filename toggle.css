@@ -8,15 +8,16 @@ body{
     top:48%;
     left:45%;
     display:flex;
-    background-color: rgb(222, 213, 213);
+    background-color: lightslategray;
 }
 #box::before{
     content:'';
     position:absolute;
-    left:0px;
-    width:40px;
-    height:40px;
-    background-color: rgb(8, 3, 14);
+    border:3px solid white;
+    left:3px;
+    width:35px;
+    height:35px;
+    background-color: lightslategray;
     border-radius: 50%;
     z-index: 2;
     transition: 0.5s ease;
@@ -25,11 +26,12 @@ body{
    
 
 #box{
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
+    width: 85px;
+    height: 45px;
+    border:3px solid rgb(18, 18, 19);
+    border-radius: 25px;
     appearance: none;
-    background-color: rgb(149, 163, 163);
+    background-color: rgb(200, 205, 209);
     cursor: pointer;
 }
 #box:checked{
@@ -41,3 +43,6 @@ body{
    background: rgb(249, 156, 6);
 }
 
+ body:has(input:checked){
+background-color:rgb(240, 151, 49);
+}
